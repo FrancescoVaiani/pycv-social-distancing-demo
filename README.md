@@ -62,29 +62,29 @@ python3 social_distancing.py run -c 10385
 Enjoy.
 
 ## Triangular Similarity
-The triangle similarity (![](https://latex.codecogs.com/svg.latex?S)) is calculated using the detected
-subject width in pixel (![](https://latex.codecogs.com/svg.latex?P)), the known width of the subject 
-(![](https://latex.codecogs.com/svg.latex?W)) and the known distance from the camera 
-(![](https://latex.codecogs.com/svg.latex?D)) as:
+The triangle similarity (![](https://latex.codecogs.com/svg.latex?\color[rgb]{0.41,0.61,0.41}{S})) is calculated using the detected
+subject width in pixel (![](https://latex.codecogs.com/svg.latex?\color[rgb]{0.41,0.61,0.41}{P})), the known width of the subject 
+(![](https://latex.codecogs.com/svg.latex?\color[rgb]{0.41,0.61,0.41}{W})) and the known distance from the camera 
+(![](https://latex.codecogs.com/svg.latex?\color[rgb]{0.41,0.61,0.41}{D})) as:
 
-![](https://latex.codecogs.com/svg.latex?\Large&space;S=\frac{P*D}{W})
+![](https://latex.codecogs.com/svg.latex?\Large&space;\color[rgb]{0.41,0.61,0.41}{S=\frac{P*D}{W}})
 
-We can use this data to calculate any later distance (![](https://latex.codecogs.com/svg.latex?D_n))
-using the new subject width in pixel (![](https://latex.codecogs.com/svg.latex?P_n)) as:
+We can use this data to calculate any later distance (![](https://latex.codecogs.com/svg.latex?\color[rgb]{0.41,0.61,0.41}{D_n}))
+using the new subject width in pixel (![](https://latex.codecogs.com/svg.latex?\color[rgb]{0.41,0.61,0.41}{P_n})) as:
 
-![](https://latex.codecogs.com/svg.latex?\Large&space;D_n=\frac{W*S}{P_n})
+![](https://latex.codecogs.com/svg.latex?\Large&space;\color[rgb]{0.41,0.61,0.41}{D_n=\frac{W*S}{P_n}})
 
 If we replace S from the previous formula
 
-![](https://latex.codecogs.com/svg.latex?\Large&space;D_n=\frac{W*\frac{P*D}{W}}{P_n})
+![](https://latex.codecogs.com/svg.latex?\Large&space;\color[rgb]{0.41,0.61,0.41}{D_n=\frac{W*\frac{P*D}{W}}{P_n}})
 
 If we approximate the width of any subject as similar
 
-![](https://latex.codecogs.com/svg.latex?\Large&space;D_n=\frac{\frac{W}{W}*P*D}{P_n}=\frac{P*D}{P_n})
+![](https://latex.codecogs.com/svg.latex?\Large&space;\color[rgb]{0.41,0.61,0.41}{D_n=\frac{\frac{W}{W}*P*D}{P_n}=\frac{P*D}{P_n}})
 
 So our Calibration number could be defined as
 
-![](https://latex.codecogs.com/svg.latex?\Large&space;C=P*D\Rightarrow&space;D_n=\frac{C}{P_n})
+![](https://latex.codecogs.com/svg.latex?\Large&space;\color[rgb]{0.41,0.61,0.41}{C=P*D\Rightarrow&space;D_n=\frac{C}{P_n}})
 
 ## Known issues
 
